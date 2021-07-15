@@ -1,0 +1,17 @@
+{% extends 'cars_and_brands/base.html' %}
+
+{% block content %}
+  <div class="post">
+    <div class="car-detail">
+        
+      <a class="btn btn-default" href="{% url 'edit_car' brand_id=brand.id car_id=car.id %}"><i class="bi bi-vector-pen"></i>Edit Car</a>
+        <div class="detail">
+            <h3><a href="{% url 'car_detail' brand_id=brand.id car_id=car.id %}">{{car.year}} {{car.make}} {{car.model}}</a></h3>
+            <p>Price: {{ car.price }}</p>
+            <p>Color: {{ car.color }}</p>
+        </div>
+        <a href="{% url 'delete_car' brand_id=brand.id car_id=car.id %}">Delete Car</a>
+    </div>
+    
+  </div>
+{% endblock %}

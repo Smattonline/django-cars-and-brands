@@ -1,0 +1,64 @@
+
+[
+  {
+      "model": "cars_and_brands.Brand",
+      "pk": 1,
+      "fields": {
+        "name": "Ford",
+        "company": "Ford Motor Company"
+      }
+  },
+  {
+      "model": "cars_and_brands.Brand",
+      "pk": 2,
+      "fields": {
+        "name": "BMW",
+        "company": "Bayerische Motoren Werke AG"
+      }
+  },
+  {
+      "model": "cars_and_brands.Brand",
+      "pk": 3,
+      "fields": {
+        "name": "Lamborghini",
+        "company": "Automobili Lamborghini"
+      }
+  },
+  {
+      "model": "cars_and_brands.Car",
+      "pk": 1,
+      "fields": {
+        "brand_id": 1, 
+        "make": "Ford", 
+        "model": "Mustang GT", 
+        "year": 2019, 
+        "color": "Blue", 
+        "price": 36500.00
+      }
+  },
+  {
+      "model": "cars_and_brands.Car",
+      "pk": 2,
+      "fields": {
+        "brand_id": 2, 
+        "make": "BMW", 
+        "model": "M2", 
+        "year": 2018, 
+        "color": "Black", 
+        "price": 49340.50
+      }
+  },
+  {
+      "model": "cars_and_brands.Car",
+      "pk": 3,
+      "fields": {
+        "brand_id": 3, 
+        "make": "Lamborgini", 
+        "model": "Aventador", 
+        "year": 2019, 
+        "color": "grey", 
+        "price": 505000.00
+      }
+  }
+
+]

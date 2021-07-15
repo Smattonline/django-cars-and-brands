@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars and Brands</title>
+    <link rel="stylesheet" href="{% static 'cars_and_brands.css' %}">
+</head>
+<body>
+    <div class="header">
+        <h2><a id='header_text' href="{% url 'brands_list' %}">My Car Brands</a></h2>
+      </div>
+      <div class="content container">
+        <div class="row">
+          <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+          </div>
+        </div>
+      </div>
+</body>
+</html>

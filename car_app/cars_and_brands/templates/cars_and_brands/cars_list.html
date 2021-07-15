@@ -1,0 +1,12 @@
+{% extends 'cars_and_brands/base.html' %}
+
+{% block content %}
+<div class='car-list'>
+  <a href="{% url 'new_car' brand_id=brand.id %}" class="car_brand">Add Car</a>
+    {% for car in cars %}
+      <div class="car_detail">
+        <h2><a href="{% url 'car_detail' brand_id=brand.id car_id=car.id %}">{{car.year}} {{car.make}} {{car.model}}</a></h2>
+      </div>
+    {% endfor %}
+</div>
+{% endblock %}

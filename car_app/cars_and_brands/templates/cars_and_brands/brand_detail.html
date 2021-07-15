@@ -1,0 +1,19 @@
+{% extends 'cars_and_brands/base.html' %}
+
+{% block content %}
+  <div class="post">
+    <div class="brand">
+        
+      <a class="btn btn-default" href="{% url 'edit_brand' brand_id=brand.id %}"><i class="bi bi-vector-pen"></i>Edit Brand</a>
+        <div class="detail">
+            <h3>Brand Name: {{ brand.name }}</h3>
+            <p>Company Name: {{ brand.company }}</p>
+        </div>
+        <a href="{% url 'delete_brand' brand_id=brand.id %}">Delete Brand</a>
+    </div>
+    <h3><a class="cars" href="{% url 'cars_list' brand_id=brand.id %}">Cars</a></h3>
+  </div>
+{% endblock %}
+
+
+

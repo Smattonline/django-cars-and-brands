@@ -1,0 +1,16 @@
+.header {
+    background-color: #41521a;
+    margin-top: 0;
+    padding: 10px;
+  }
+  
+  #header_text {
+    color: rgb(180, 27, 27);
+    font: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+
+  .brand, .brand-list, .car-list, .car-detail {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
